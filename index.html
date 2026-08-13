@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <section class="hero" id="home">
+    <div class="nav">
+      <div class="logo"></div>
+      <div class="buttons">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#order">Order Now</a>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>Fresh. Tasty. Unforgettable.</h1>
+      <p>Farm‑to‑table ingredients, crafted with passion.</p>
+      <a href="#order" class="btn-primary">Order Now</a>
+    </div>
+  </section>
+
+
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-img" style="background-image: url('burger.webp');"></div>
+          <h3>Classic Burger</h3>
+          <p>Juicy beef, cheddar, lettuce, and secret sauce.</p>
+          <span class="price">$14.99</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-img" style="background-image: url('pizza.jpg');"></div>
+          <h3>Margherita Pizza</h3>
+          <p>Hand‑tossed dough, tomato, mozzarella, basil.</p>
+          <span class="price">$16.50</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-img" style="background-image: url('salad.jpg');"></div>
+          <h3>Fresh Salad Bowl</h3>
+          <p>Mixed greens, avocado, cherry tomatoes, vinaigrette.</p>
+          <span class="price">$11.25</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-img" style="background-image: url('salmon.webp');"></div>
+          <h3>Grilled Salmon</h3>
+          <p>Lemon‑herb salmon with seasonal vegetables.</p>
+          <span class="price">$22.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">About Us</h2>
+        <p>
+          At our restaurant, we believe that great food starts with the finest ingredients.
+          Every dish is prepared from scratch using locally sourced produce and sustainable
+          proteins. Our chefs bring years of experience and a dash of creativity to every plate,
+          ensuring a dining experience that feels both familiar and exciting.
+        </p>
+        <p>
+          Whether you're here for a quick lunch or a leisurely dinner, we treat every guest
+          like family. Come taste the difference freshness makes.
+        </p>
+        <a href="#order" class="btn-primary">Make a Reservation</a>
+      </div>
+      <div class="about-image">
+        <div style="background-image: url('about.jpg');"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="order" id="order">
+    <div class="container">
+      <h2 class="section-title">Order Now</h2>
+      <p class="order-sub">Craving something? Let us know and we'll get it ready for you.</p>
+      <form class="order-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Phone Number" />
+        <textarea rows="4" placeholder="Tell us what you'd like to order..."></textarea>
+        <button type="submit" class="btn-primary">Send Order</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Fresh & Tasty. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
