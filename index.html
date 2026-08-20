@@ -22,10 +22,9 @@
       <h1>Fresh. Tasty. Unforgettable.</h1>
       <p>Farm‑to‑table ingredients, crafted with passion.</p>
       <a href="#order" class="btn-primary">Order Now</a>
+      <button class="toggle-btn">Dark Mode</button>
     </div>
   </section>
-
-
 
   <section class="menu" id="menu">
     <div class="container">
@@ -59,8 +58,6 @@
     </div>
   </section>
 
-
-
   <section class="about" id="about">
     <div class="container">
       <div class="about-content">
@@ -83,23 +80,25 @@
     </div>
   </section>
 
-
-
   <section class="order" id="order">
     <div class="container">
       <h2 class="section-title">Order Now</h2>
       <p class="order-sub">Craving something? Let us know and we'll get it ready for you.</p>
-      <form class="order-form">
-        <input type="text" placeholder="Your Name" required />
+      <form class="order-form" id="order-form">
+        <input type="text" id="name" placeholder="Your Name" required />
         <input type="email" placeholder="Email Address" required />
         <input type="text" placeholder="Phone Number" />
-        <textarea rows="4" placeholder="Tell us what you'd like to order..."></textarea>
+        <textarea id="order-details" rows="4" placeholder="Tell us what you'd like to order..."></textarea>
         <button type="submit" class="btn-primary">Send Order</button>
       </form>
     </div>
   </section>
 
-
+  <section class="posts" id="posts">
+    <div class="container">
+      <div id="posts-container"></div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -111,5 +110,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
