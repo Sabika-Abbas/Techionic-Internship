@@ -469,17 +469,66 @@ body.dark-mode .hero::before {
   padding: 40px 0;
   background: #f9f7f4;
 }
+
+#posts-container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+#posts-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f4a261;
+  padding-bottom: 0.5rem;
+}
+
+#posts-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+#posts-container li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#posts-container li:last-child {
+  border-bottom: none;
+}
+
+#posts-container li strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1e1e1e;
+}
+
+#posts-container li small {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
 body.dark-mode .posts{
   background: #2a2a2a;
 }
 
 body.dark-mode #posts-container {
-  color: #f0f0f0;  
+  color: #ccc;  
+  background: #444;
 }
 body.dark-mode #posts-container li {
-  color: #f0f0f0;
   border-bottom: 1px solid #444;
 }
+
 body.dark-mode #posts-container h3 {
   color: #f4a261;
+}
+
+body.dark-mode #posts-container li small{
+  color: #ccc;
 }
