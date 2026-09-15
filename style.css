@@ -99,8 +99,20 @@ body {
   transition: color 0.2s;
 }
 
+.nav .buttons #login-button {
+  background: #f4a261;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  
+}
+
 .nav .buttons a:hover {
   color: #f4a261;
+}
+.nav .buttons #login-button:hover {
+  background: #e76f51;
 }
 
 .hero-content {
