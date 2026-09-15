@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const toggleBtn = document.querySelector('.toggle-btn');
   if (toggleBtn) {
-    toggleBtn.addEventListener('click', function() {
+    toggleBtn.addEventListener('click', function () {
       document.body.classList.toggle('dark-mode');
       toggleBtn.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
     });
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const orderForm = document.querySelector('#order-form');
   if (orderForm) {
-    orderForm.addEventListener('submit', function(event) {
+    orderForm.addEventListener('submit', function (event) {
       event.preventDefault();
       const name = document.querySelector('#name')?.value || 'Guest';
       const order = document.querySelector('#order-details')?.value || 'nothing';
@@ -45,4 +45,35 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   loadPosts();
+
+  const loginForm = document.querySelector('#login-form');
+  if (loginForm) {
+    loginForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const email = document.querySelector('#login-email').value.trim();
+      const password = document.querySelector('#login-password').value;
+      const message = document.querySelector('#login-message');
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      message.className = '';
+      message.textContent = '';
+
+      if (!emailRegex.test(email)) {
+        message.textContent = 'Please enter a valid email address.';
+        message.classList.add('error');
+        return;
+      }
+
+      if (password.length < 8) {
+        message.textContent = 'Password must be at least 8 characters long.';
+        message.classList.add('error');
+        return;
+      }
+
+      message.textContent = 'Login successful!';
+      message.classList.add('success');
+      loginForm.reset();
+    });
+  }
 });

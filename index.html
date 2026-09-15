@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
   <section class="hero" id="home">
     <div class="nav">
@@ -75,7 +77,7 @@
         <a href="#order" class="btn-primary">Make a Reservation</a>
       </div>
       <div class="about-image">
-        <img src="about.jpg" alt="About Us"/>
+        <img src="about.jpg" alt="About Us" />
       </div>
     </div>
   </section>
@@ -100,6 +102,18 @@
     </div>
   </section>
 
+  <section class="login" id="login">
+    <div class="container">
+      <h2 class="section-title">Login</h2>
+      <form class="login-form" id="login-form">
+        <input type="email" id="login-email" placeholder="Email Address" required />
+        <input type="password" id="login-password" placeholder="Password (min 8 characters)" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <div id="login-message"></div>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2026 Fresh & Tasty. All rights reserved.</p>
@@ -113,4 +127,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
