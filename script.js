@@ -46,34 +46,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   loadPosts();
 
-  const loginForm = document.querySelector('#login-form');
-  if (loginForm) {
-    loginForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const email = document.querySelector('#login-email').value.trim();
-      const password = document.querySelector('#login-password').value;
-      const message = document.querySelector('#login-message');
-
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      message.className = '';
-      message.textContent = '';
-
-      if (!emailRegex.test(email)) {
-        message.textContent = 'Please enter a valid email address.';
-        message.classList.add('error');
-        return;
-      }
-
-      if (password.length < 8) {
-        message.textContent = 'Password must be at least 8 characters long.';
-        message.classList.add('error');
-        return;
-      }
-
-      message.textContent = 'Login successful!';
-      message.classList.add('success');
-      loginForm.reset();
-    });
+  const loginBtn = document.querySelector('#login-button');
+  if (loginBtn) {
+    const savedEmail = localStorage.getItem('userEmail');
+    if (savedEmail) {
+      loginBtn.textContent = 'Hi, ' + savedEmail.split('@')[0];
+      loginBtn.href = '#';
+      loginBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (confirm('Do you want to log out?')) {
+          localStorage.removeItem('userEmail');
+          window.location.reload();
+        }
+      });
+    }
   }
 });

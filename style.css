@@ -606,3 +606,69 @@ body.dark-mode .login-form input {
 body.dark-mode .login-form input:focus {
   border-color: #f4a261;
 }
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9f7f4;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #1e1e1e;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#login-form input {
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#login-form input:focus {
+  outline: none;
+  border-color: #f4a261;
+  box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.15);
+}
+
+#login-form button {
+  padding: 14px 40px;
+  align-self: center;
+}
+
+#login-message {
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#login-message.success {
+  background: #4caf50;
+  color: white;
+}
+
+#login-message.error {
+  background: #f44336;
+  color: white;
+}
